@@ -1,18 +1,18 @@
 pipeline{
     agent any
     stages{
-        
-        stage("First job"){
+
+        stage("intro"){
             steps{
-                echo "This is the first job"
+                echo "This is the testing stage"
+            }
+
+        }
+
+        stage("production"){
+            steps{
+                echo "This is the production stage"
             }
         }
-        
-        stage("Second job"){
-            steps{
-                echo "This is the second job to show its working. "Added Jenkins"
-            }
-        }
-    
     }
 }
